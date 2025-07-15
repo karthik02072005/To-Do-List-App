@@ -1,0 +1,115 @@
+*{
+    font-family: "Poppins",sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(backgroundfortodo.jpg)no-repeat center center/cover;
+
+}
+
+.box{
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    backdrop-filter: blur(7px);
+
+}
+
+.box h2{
+    color: #deebfb;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.inp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 10px 0px;
+    border-radius: 60px;
+    background-color: #f3f3f3;
+    margin-bottom: 40px;
+}
+
+.inp input{
+    width: 80%;
+    height: 60px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 0px 30px;
+    background-color: #f3f3f3;
+    color: #deebfb;
+}
+
+.inp button{
+    font-size: 17px;
+    padding: 15px 60px;
+    border-radius: 60px;
+    background-color:rgb(53, 53, 117);
+    border: none;
+    outline: none;
+    color: #deebfb;
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 24px;
+    font-size: 20px;
+    text-wrap: wrap;
+    color: #deebfb;
+
+}
+
+ul li::before{
+    content:"";
+    height: 32px;
+    position: absolute;
+    width: 32px;
+    background-image: url("radio.png");
+    background-size: cover;
+    background-position:center;
+    left: 0px;
+    top: 8px;
+}
+
+ul li.checked{
+    color: #deebfb;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    background-image: url("checked.png");
+    background-size: cover;
+    background-position:center;
+    left: 0px;
+    top: 8px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    top: 12px;
+    color: #deebfb;
+}
